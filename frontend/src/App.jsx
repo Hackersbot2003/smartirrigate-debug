@@ -10,6 +10,7 @@ import IrrigationPanel from "./components/IrrigationPanel.jsx";
 import AIAssistant     from "./components/AIAssistant.jsx";
 import FieldSummary    from "./components/FieldSummary.jsx";
 import TipCard         from "./components/TipCard.jsx";
+import FirebaseMetadata from "./components/FirebaseMetadata.jsx";
 import { AlertBanner } from "./components/UI.jsx";
 
 import { useSensorData, useSensorHistory, useMotor } from "./firebase.js";
@@ -254,6 +255,14 @@ export default function App() {
             </>
           )}
 
+          {/* ── FIREBASE DATA ── */}
+          {page === "firebase" && (
+            <>
+              <PTitle title="Firebase Live Data" sub="Real-time sensor readings from Firebase" />
+              <FirebaseMetadata isConnected={connected} />
+            </>
+          )}
+
           {/* ── SETTINGS ── */}
           {page === "settings" && (
             <>
@@ -290,6 +299,7 @@ function SettingsPage() {
         ["Firebase DB URL",    "https://minor-project-mt-default-rtdb.asia-southeast1.firebasedatabase.app"],
         ["Firebase Project",   "minor-project-mt"],
         ["Groq Model",         "llama3-70b-8192"],
+        ["Location",           "Bhopal, MP (23.2599°N, 77.4126°E)"],
         ["Soil Dry Threshold", "30%"],
         ["Heat Stress Limit",  "38°C"],
         ["Low Humidity Alert", "25%"],

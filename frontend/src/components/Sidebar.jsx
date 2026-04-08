@@ -5,6 +5,7 @@ const ITEMS = [
   { id:"analytics",  emoji:"📈",  label:"Analytics"  },
   { id:"irrigation", emoji:"💧",  label:"Irrigation" },
   { id:"weather",    emoji:"🌤️", label:"Weather"    },
+  { id:"firebase",   emoji:"🔥",  label:"Firebase Data" },
   { id:"settings",   emoji:"⚙️",  label:"Settings"   },
 ];
 
