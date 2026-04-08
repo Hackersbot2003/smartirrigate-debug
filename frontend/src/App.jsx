@@ -290,7 +290,6 @@ function SettingsPage() {
         ["Firebase DB URL",    "https://minor-project-mt-default-rtdb.asia-southeast1.firebasedatabase.app"],
         ["Firebase Project",   "minor-project-mt"],
         ["Groq Model",         "llama3-70b-8192"],
-        ["Location",           "Bhopal, MP (23.2599°N, 77.4126°E)"],
         ["Soil Dry Threshold", "30%"],
         ["Heat Stress Limit",  "38°C"],
         ["Low Humidity Alert", "25%"],
