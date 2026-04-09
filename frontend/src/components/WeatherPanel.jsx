@@ -24,7 +24,7 @@ export default function WeatherPanel({ weather, forecast, wDemo }) {
   return (
     <div className="card fade-up" style={{ padding: 18, animationDelay: "420ms" }}>
       <SHead
-        title={`🌤️ Weather — ${LOCATION().name}`}
+        title={`🌤️ Weather `}
         sub={wDemo ? "⚠ Demo data — replace OWM_KEY in config.js for live data" : "Live from OpenWeatherMap"}
       />
 
